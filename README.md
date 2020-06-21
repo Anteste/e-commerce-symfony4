@@ -1,28 +1,31 @@
-# Site-de-biens-immobiliers
+# e-commerce
 
-Site de biens immobiliers  codez en Symfony 4
+e-commerce with Symfony 4
 
-Après avoir clôné ce repository, modifiez le fichier .env et remplacer la ligne ci-dessous par votre accès à la base de données
+Repository After cloning this, modify the .env file and replace the line below with your access to the database
 
 ```sh
 DATABASE_URL=mysql://root:root@127.0.0.1:3306/masuperagence
 ```
 
-
-Pour installer les différents packages nécessaire au fonctionnement de l'application
+To install the different packages necessary for the application to work
 ```sh
 $ composer install
 ```
 
-Lancez le serveur
+Run the php server
 ```sh
 $ php bin/console server:run
 ```
 
-Générez les fixtures
+Make the migration
+```sh
+$ php bin/console doctrine:migrations:migrate
+
+Generate the fixtures
 ```sh
 $ php bin/console doctrine:fixtures:load --append
 ```
 
-Pour accèder à l'administration, aller sur '/admin' puis rentrez les identifiants admin:admin
+To access the administration, go to '/ admin' then enter the admin credentials admin:admin
 
