@@ -21,6 +21,7 @@ $ php bin/console server:run
 Make the migration
 ```sh
 $ php bin/console doctrine:migrations:migrate
+```
 
 Generate the fixtures
 ```sh
